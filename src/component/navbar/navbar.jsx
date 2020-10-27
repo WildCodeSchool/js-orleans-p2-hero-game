@@ -8,7 +8,8 @@ function Navbar() {
             <nav className="NAVBAR_total" id="Marty">
                 <ul className="NAVBAR_nav">
                     <div className="NAVBAR_divLogo">
-                        <picture><img className="NAVBAR_logo" src={logo} alt="Logo My Sup'R Heros"/></picture>
+                        <p className="NAVBAR_mysuprheros">MY SUP'R HEROS</p>
+                        <picture className="NABAR_picLogo"><img className="NAVBAR_logo" src={logo} alt="Logo My Sup'R Heros"/></picture>
                     </div>
                     <div className="NAVBAR_rightDiv">
                         <ul className="NAVBAR_navList">
@@ -24,4 +25,7 @@ function Navbar() {
     
 };
 
+
+
 export default Navbar;
+

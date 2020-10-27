@@ -5,9 +5,13 @@
     height: 80px;
 }
 
+.NABAR_picLogo{
+    height: 60px;
+}
+
 .NAVBAR_logo{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
 
 .NAVBAR_nav{
@@ -22,10 +26,11 @@
     display: flex;
     background-color: #FFF5EF;
     height: 80px;
-    width: 90px;
-    justify-content: center;
+    width: 80px;
+    justify-content: space-around;
     align-items: center;
     box-shadow: 10px 0px 10px #11131a;
+    border-radius: 0px 5px 5px 0px;
 }
 
 .NAVBAR_rightDiv{
@@ -51,3 +56,25 @@
     color: #66605d;
 }
 
+.NAVBAR_mysuprheros{
+    display: block;
+    position: absolute;
+    width: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#253A49;
+    font-size: 16pt;
+    padding-left: 20px;
+    opacity: 0;
+}
+
+.NAVBAR_divLogo:hover{
+    width: 200px;
+    transition: 0.2s ease;
+}
+
+.NAVBAR_divLogo:hover .NAVBAR_mysuprheros{
+    position: inherit;
+    opacity: 100;
+    transition: 0.3s ease 0.2s;
+}
