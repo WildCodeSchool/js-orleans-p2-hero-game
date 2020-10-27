@@ -1,0 +1,53 @@
+.NAVBAR_total{
+    background-color: #1a1d26;
+    display: flex;
+    width: 100%;
+    height: 80px;
+}
+
+.NAVBAR_logo{
+    width: 50px;
+    height: 50px;
+}
+
+.NAVBAR_nav{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.NAVBAR_divLogo{
+    display: flex;
+    background-color: #FFF5EF;
+    height: 80px;
+    width: 90px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 0px 10px #11131a;
+}
+
+.NAVBAR_rightDiv{
+    display: flex;
+    padding-right: 50px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.NAVBAR_navList{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.NAVBAR_title{
+    color: #FFF5EF;
+    list-style: none;
+}
+
+.NAVBAR_title:hover{
+    color: #66605d;
+}
+

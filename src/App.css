@@ -9,31 +9,4 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  color: #000911;
-  font-weight: bold;
-  background-color: #97d8eb;
-  padding: 0.3rem;
-  border-radius: 3px;
-}
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-}
-
-.item {
-  text-align: center;
-  width: fit-content;
-}
-
-.item > img {
-  max-width: 80vw;
-}
-
-.container::after {
-  content: '';
-  height: 15vh;
-}
