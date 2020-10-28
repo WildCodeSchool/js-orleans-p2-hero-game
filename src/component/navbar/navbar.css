@@ -7,6 +7,8 @@
 
 .NABAR_picLogo{
     height: 60px;
+    padding-bottom: 70vh;
+    transition: all 0.5s ease-in-out;
 }
 
 .NAVBAR_logo{
@@ -29,8 +31,9 @@
     width: 80px;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 10px 0px 10px #11131a;
+    box-shadow: 5px 0px 10px #11131a;
     border-radius: 0px 5px 5px 0px;
+    transition: all 0.5s ease-in-out;
 }
 
 .NAVBAR_rightDiv{
@@ -80,4 +83,95 @@
     position: inherit;
     opacity: 100;
     transition: 0.3s ease 0.1s;
+}
+
+.NAVBAR_burgerMenu{
+    display: none;
+}
+
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:450px){
+    .NAVBAR_burgerMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 5vw;
+    }
+
+    .NAVBAR_navList{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        height: 40vh;
+        transition: 0.5s ease-in-out;
+    }
+
+    .NAVBAR_title{
+        color: var(--dark);
+    }
+
+    .NAVBAR_rightDiv{
+        display: none;
+        opacity: 0;
+    }
+    
+    span{
+        display: flex;
+        background-color: var(--light);
+        height: 3px;
+        width : 30px;
+        margin-bottom: 0.3em;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+
+
+    .NAVBAR_rightDiv.open{
+        display: flex;
+        position: absolute;
+        align-items: center;
+        width: 70vw;
+        padding-top: 18vh;
+        animation-name: opacity;
+        animation-duration: 1s;
+        opacity: 1;
+        }
+
+    .NAVBAR_divLogo.open {
+        width: 80vw;
+        height: 100vh;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .NAVBAR_divLogo.open .NAVBAR_picLogo{
+        padding-bottom: 80vh;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .NAVBAR_burgerMenu.open .NAVBAR_spanMid {
+        transform: translateX(-50px);
+        height: 0px;
+    }
+    .NAVBAR_burgerMenu.open .NAVBAR_spanTop {
+        transform: rotate(45deg) translate(0px, 8px);
+    }
+    .NAVBAR_burgerMenu.open .NAVBAR_spanBot {
+        transform: rotate(-45deg) translate(0px, -8px);
+    }
+
+    
+
 }
