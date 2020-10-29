@@ -1,10 +1,10 @@
 import React from 'react'
 
 function open() {
-  const list = document.querySelector(".NAVBAR_rightDiv")
-  const menuBtn= document.querySelector(".NAVBAR_burgerMenu");
-  const logo = document.querySelector(".NAVBAR_logo")
-  const menuBackground = document.querySelector(".NAVBAR_divLogo")
+  const list = document.querySelector(".navbar_rightDiv")
+  const menuBtn= document.querySelector(".navbar_burgerMenu");
+  const logo = document.querySelector(".navbar_logo")
+  const menuBackground = document.querySelector(".navbar_divLogo")
 
   let result = menuBackground.classList.toggle("open");
   
