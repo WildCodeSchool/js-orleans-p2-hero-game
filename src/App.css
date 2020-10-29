@@ -37,3 +37,7 @@ code {
   content: '';
   height: 15vh;
 }
+img {
+  width:250px;
+  height:350px;
+}
