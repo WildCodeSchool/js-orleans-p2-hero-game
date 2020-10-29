@@ -8,7 +8,7 @@ a{
     justify-content: center;
     align-items: flex-start;
     width: 100vw;
-    height: 45vh;
+    height: 40vh;
     background-color: var(--dark);
 }
 
@@ -36,10 +36,30 @@ a{
     color: #DCDCDC;
     font-weight: bold;
     font-size: 16pt;
-    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+    margin-bottom: 2vh;
 }
 
 .FOOTER_text{
     font-family: var(--main-font);
     color: #FFF5EF;
+    margin-top: 1vh;
+}
+
+.FOOTER_logo{
+    height: 80px;
+    width: 80px;
+}
+
+@media screen and (max-width:1050px){
+    .FOOTER_total{
+        flex-direction: column;
+        align-items: center;
+        height: 130vh;
+    }
+
+    .FOOTER_div{
+        margin-top: 10vh;
+    }
+    
 }

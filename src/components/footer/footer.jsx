@@ -2,14 +2,15 @@ import React from 'react'
 import './footer.css'
 import Github from './github_icon-icons.com_65450.png'
 import WCS from './WCS.png'
+import LogoMSH from './Logo_Entier.png'
 
 function Footer() {
     return(
         <div>
             <div className="FOOTER_total">
                 <ul className="FOOTER_div">
-                    <p className="FOOTER_title">MY SUP'R HERO</p>
-                    <picture><img src="" alt=""/></picture>
+                    <p className="FOOTER_title">MY SUP'R HEROS</p>
+                    <picture><img className="FOOTER_logo" src={LogoMSH} alt="logo MY SUP'R HEROS"/></picture>
                     <a href="#list"><p className="FOOTER_text"> Les Personnages</p></a>
                     <a href="#quizz"><p className="FOOTER_text">Le Quizz</p></a>
                 </ul>
