@@ -1,6 +1,7 @@
 import './App.css';
 import './main.css'
-import Accueil from './component/accueil/accueil';
+import Accueil from './component/pages/accueil';
+import Jeux from './component/pages/jeux';
 
 function App() {
   return (

@@ -81,13 +81,12 @@ a{
     font-weight: bold;
     text-align: right;
     color:#253A49;
-    font-size: 30pt;
-    padding-left: 20px;
+    font-size: 20pt;
     opacity: 0;
 }
 
 .NAVBAR_divLogo:hover{
-    width: 250px;
+    width: 200px;
     transition: 0.2s ease;
 }
 
