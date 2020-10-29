@@ -4,7 +4,7 @@ import Navbar from '../navbar/navbar';
 function Accueil() {
   return (
     <div>
-      <Navbar />
+      Accueil
     </div>
   );
 }

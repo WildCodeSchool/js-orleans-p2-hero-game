@@ -3,9 +3,9 @@ import Navbar from '../navbar/navbar';
 
 
 function Jeux() {
-    return(
-        <div>
-            <Navbar />
+    return (
+        <div style={{ background: 'green', height: '100vh', width: '100vw' }}>
+            Jeux
         </div>
     )
 }

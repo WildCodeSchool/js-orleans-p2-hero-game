@@ -3,6 +3,7 @@ import './navbar.css';
 import logo from './Logo_Mini.png';
 import open from './annim';
 import { Switch, Route, Link } from 'react-router-dom';
+import Jeux from '../pages/jeux';
 
 class Navbar extends React.Component {
     constructor(props) {
@@ -11,26 +12,26 @@ class Navbar extends React.Component {
         };
     }
 
-    render(){
+    render() {
 
-        return(
-            
+        return (
+
             <div>
                 <nav className="NAVBAR_total" id="Marty">
                     <div className="NAVBAR_nav">
                         <div className="NAVBAR_divLogo">
-                            <p className="NAVBAR_accueil">ACCUEIL</p>
-                            <picture className="NAVBAR_picLogo"><img className="NAVBAR_logo" src={logo} alt="Logo My Sup'R Heros"/></picture>
+                            <Link className="NAVBAR_accueil" to="/" >ACCUEIL</Link>
+                            <picture className="NAVBAR_picLogo"><img className="NAVBAR_logo" src={logo} alt="Logo My Sup'R Heros" /></picture>
                         </div>
-                        
+
                         <div className="NAVBAR_rightDiv">
                             <ul className="NAVBAR_navList">
-                                <li className="NAVBAR_title">JEUX</li>
+                                <Link className="NAVBAR_title" to="/game" >JEUX</Link>
                                 <a href="#list"><li className="NAVBAR_title">PERSONNAGES</li></a>
                                 <a href="#quizz"><li className="NAVBAR_title">QUIZZ</li></a>
                             </ul>
                         </div>
-                        <a className="NAVBAR_burgerMenu" href="#" onClick={ open }>
+                        <a className="NAVBAR_burgerMenu" href="#" onClick={open}>
                             <span className="NAVBAR_spanTop"></span>
                             <span className="NAVBAR_spanMid"></span>
                             <span className="NAVBAR_spanBot"></span>
