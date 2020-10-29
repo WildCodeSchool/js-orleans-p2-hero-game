@@ -1,12 +1,12 @@
 import './Main.css';
-import ListPerso from './components/ListPersos';
 import './App.css';
+import CharacterList from './components/CharacterList';
 
 function App() {
   return (
     <main className="container">
       <div className="item">
-        <ListPerso />
+        <CharacterList />
       </div>
     </main>
   );

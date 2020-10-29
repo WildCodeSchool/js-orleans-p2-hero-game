@@ -121,7 +121,7 @@
     grid-row: 4;
 }
 
-#card{
+.card{
     display: flex;
     grid-column: 4/7;
     grid-row: 1/5;
