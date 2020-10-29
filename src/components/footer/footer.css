@@ -1,0 +1,25 @@
+.FOOTER_total{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 40vh;
+    background-color: var(--dark);
+}
+
+.FOOTER_div{
+    padding: 5vw;
+    margin: 0;
+}
+
+.FOOTER_title{
+    font-family: var(--main-font);
+    color: #DCDCDC;
+    padding-bottom: 2vh;
+}
+
+.FOOTER_text{
+    font-family: var(--main-font);
+    color: #FFF5EF;
+}
