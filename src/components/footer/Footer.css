@@ -2,7 +2,7 @@ a{
     text-decoration: none;
 }
 
-.FOOTER_total{
+.footer_total{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -12,26 +12,26 @@ a{
     background-color: var(--dark);
 }
 
-.FOOTER_div{
+.footer_div{
     padding-right: 5vw;
     padding-left: 5vw;
     margin: 0;
 }
 
-.FOOTER_divDev{
+.footer_divDev{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
-.FOOTER_logoGithub{
+.footer_logoGithub{
     width:20px;
     height: 20px;
     padding-right: 20px;
 }
 
-.FOOTER_title{
+.footer_title{
     font-family: var(--main-font);
     color: #DCDCDC;
     font-weight: bold;
@@ -40,24 +40,24 @@ a{
     margin-bottom: 2vh;
 }
 
-.FOOTER_text{
+.footer_text{
     font-family: var(--main-font);
     color: #FFF5EF;
     margin-top: 1vh;
 }
 
-.FOOTER_logo{
+.footer_logo{
     height: 80px;
     width: 80px;
 }
 
-.FOOTER_logoWCS{
+.footer_logoWCS{
     height: 80px;
     width: 190px;
 }
 
 @media screen and (max-width:1050px){
-    .FOOTER_total{
+    .footer_total{
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -65,7 +65,7 @@ a{
     }
 
     
-    .FOOTER_total{
+    .footer_total{
         height: 180vh;
     }
 }
