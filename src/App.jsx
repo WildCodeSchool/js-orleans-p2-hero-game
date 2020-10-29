@@ -1,9 +1,9 @@
 import './App.css';
 import './main.css'
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
-import Jeux from './component/pages/jeux';
-import Accueil from './component/pages/accueil';
-import NavBar from './component/navbar/navbar'
+import Jeux from './components/pages/Jeux';
+import Accueil from './components/pages/Accueil';
+import NavBar from './components/navbar/Navbar'
 
 function App() {
   return (

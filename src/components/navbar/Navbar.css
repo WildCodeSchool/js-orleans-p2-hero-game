@@ -2,7 +2,7 @@ a{
     text-decoration: none;
 }
 
-.NAVBAR_total{
+.navbar_total{
     background-color: var(--dark);
     position: fixed;
     display: flex;
@@ -10,17 +10,17 @@ a{
     height: 80px;
 }
 
-.NAVBAR_picLogo{
+.navbar_picLogo{
     height: 60px;
     transition: all 0.5s ease-in-out;
 }
 
-.NAVBAR_logo{
+.navbar_logo{
     width: 60px;
     height: 60px;
 }
 
-.NAVBAR_nav{
+.navbar_navigation{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -28,7 +28,7 @@ a{
     justify-content: space-between;
 }
 
-.NAVBAR_divLogo{
+.navbar_divLogo{
     display: flex;
     background-color:var(--light);
     height: 80px;
@@ -40,7 +40,7 @@ a{
     transition: all 0.5s ease-in-out;
 }
 
-.NAVBAR_rightDiv{
+.navbar_rightDiv{
     display: flex;
     padding-right: 50px;
     width: 40%;
@@ -48,24 +48,24 @@ a{
     align-items: center;
 }
 
-.NAVBAR_navList{
+.navbar_navList{
     display: flex;
     width: 100%;
     justify-content: space-around;
 }
 
-.NAVBAR_title{
+.navbar_title{
     color:var(--light);
     font-family: var(--title-font);
     font-size: 20pt;
     list-style: none;
 }
 
-.NAVBAR_title:hover{
+.navbar_title:hover{
     color: #66605d;
 }
 
-.NAVBAR_accueil{
+.navbar_home{
     display: block;
     position: absolute;
     width: 110px;
@@ -77,18 +77,18 @@ a{
     opacity: 0;
 }
 
-.NAVBAR_divLogo:hover{
+.navbar_divLogo:hover{
     width: 200px;
     transition: 0.2s ease;
 }
 
-.NAVBAR_divLogo:hover .NAVBAR_accueil{
+.navbar_divLogo:hover .navbar_home{
     position: inherit;
     opacity: 100;
     transition: 0.3s ease 0.1s;
 }
 
-.NAVBAR_burgerMenu{
+.navbar_burgerMenu{
     display: none;
 }
 
@@ -106,14 +106,14 @@ a{
 }
 
 @media screen and (max-width:1050px){
-    .NAVBAR_burgerMenu{
+    .navbar_burgerMenu{
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-right: 5vw;
     }
 
-    .NAVBAR_navList{
+    .navbar_navList{
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -123,11 +123,11 @@ a{
         padding: 0;
     }
 
-    .NAVBAR_title{
+    .navbar_title{
         color: var(--dark);
     }
 
-    .NAVBAR_rightDiv{
+    .navbar_rightDiv{
         display: none;
         opacity: 0;
     }
@@ -143,7 +143,7 @@ a{
     }
 
 
-    .NAVBAR_rightDiv.open{
+    .navbar_rightDiv.open{
         display: flex;
         position: absolute;
         align-items: center;
@@ -155,25 +155,25 @@ a{
         opacity: 1;
         }
 
-    .NAVBAR_divLogo.open {
+    .navbar_divLogo.open {
         width: 80vw;
         height: 100vh;
         transition: all 0.5s ease-in-out;
     }
 
-    .NAVBAR_divLogo.open .NAVBAR_picLogo{
+    .navbar_divLogo.open .navbar_picLogo{
         padding-bottom: 80vh;
         transition: all 0.5s ease-in-out;
     }
 
-    .NAVBAR_burgerMenu.open .NAVBAR_spanMid {
+    .navbar_burgerMenu.open .navbar_spanMid {
         transform: translateX(-50px);
         height: 0px;
     }
-    .NAVBAR_burgerMenu.open .NAVBAR_spanTop {
+    .navbar_burgerMenu.open .navbar_spanTop {
         transform: rotate(45deg) translate(0px, 8px);
     }
-    .NAVBAR_burgerMenu.open .NAVBAR_spanBot {
+    .navbar_burgerMenu.open .navbar_spanBot {
         transform: rotate(-45deg) translate(0px, -8px);
     }
 
