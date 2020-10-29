@@ -13,10 +13,11 @@ function Footer() {
                     <picture><img className="FOOTER_logo" src={LogoMSH} alt="logo MY SUP'R HEROS"/></picture>
                     <a href="#list"><p className="FOOTER_text"> Les Personnages</p></a>
                     <a href="#quizz"><p className="FOOTER_text">Le Quizz</p></a>
+                    <a href="#accueil"><p className="FOOTER_text">Le jeux</p></a>
                 </ul>
                 <ul className="FOOTER_div">
                     <p className="FOOTER_title">WILD CODE SCHOOL</p>
-                    <a href="https://www.wildcodeschool.com/fr-FR" target="_blank"><picture><img src={WCS} alt="logo wild code school"/></picture></a>
+                    <a href="https://www.wildcodeschool.com/fr-FR" target="_blank"><picture><img className="FOOTER_logoWCS" src={WCS} alt="logo wild code school"/></picture></a>
                     <p className="FOOTER_text"> Promo Dev 2020 / 2021</p>
                     <p className="FOOTER_text">Section JavaScript</p>
                 </ul>
