@@ -13,7 +13,7 @@ function Footer() {
                     <picture><img className="footer_logo" src={LogoMSH} alt="logo MY SUP'R HEROS"/></picture>
                     <a href="#list"><p className="footer_text"> Les Personnages</p></a>
                     <a href="#quizz"><p className="footer_text">Le Quizz</p></a>
-                    <a href="#accueil"><p className="footer_text">Le jeux</p></a>
+                    <a href="#accueil"><p className="footer_text">Le jeu</p></a>
                 </ul>
                 <ul className="footer_div">
                     <p className="footer_title">WILD CODE SCHOOL</p>
