@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player/youtube'
 import './Play.css';
 
-class Playwindow extends React.Component {
+class Play extends React.Component {
     render() {
         return (
             <div className='playwindowmain'>
@@ -23,5 +23,5 @@ class Playwindow extends React.Component {
     }
 }
 
-export default Playwindow;
+export default Play;
 
