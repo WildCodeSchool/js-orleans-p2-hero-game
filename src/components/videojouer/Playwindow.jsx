@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player/youtube'
-import './Playwindow.css';
+import './Play.css';
 
 class Playwindow extends React.Component {
     render() {
