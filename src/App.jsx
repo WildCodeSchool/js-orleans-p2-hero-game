@@ -6,7 +6,7 @@ import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import Jeux from './components/pages/Jeux';
 import Accueil from './components/pages/Accueil';
 import NavBar from './components/navbar/Navbar';
-import Playwindow from './components/videojouer/Playwindow';
+import Player from './components/videojouer/Player';
 import Quizz from './components/Quizz';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
     <Router>
       <div className="container">
         <NavBar />
-        <Playwindow />
+        <Player />
         <Switch>
           <Route exact path="/" component={Accueil} />
           <Route path="/game" component={Jeux} />
