@@ -1,21 +1,23 @@
 import './App.css';
-import './Main.css';
+
+import './main.css'
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import Jeux from './components/pages/Jeux';
+import Accueil from './components/pages/Accueil';
+import NavBar from './components/navbar/Navbar'
+
 
 function App() {
   return (
-    <main className="container">
-      <div className="item">
-        <h1>Hello world !</h1>
+    <Router>
+      <div className="container">
+        <NavBar />
+        <Switch>
+          <Route exact path="/" component={Accueil} />
+          <Route path="/game" component={Jeux} />
+        </Switch>
       </div>
-      <div className="item">
-        <p>Welcome to your fresh, lightweight, React App ! &#127752;</p>
-      </div>
-      <div className="item">
-        <p>
-          Start in the <code>App.jsx</code> component !
-        </p>
-      </div>
-    </main>
+    </Router>
   );
 }
 
