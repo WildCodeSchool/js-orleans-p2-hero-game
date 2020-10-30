@@ -60,12 +60,8 @@ a{
     .footer_total{
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        height: 130vh;
+        justify-content: space-between;
+        height: 120vh;
     }
 
-    
-    .footer_total{
-        height: 180vh;
-    }
 }
