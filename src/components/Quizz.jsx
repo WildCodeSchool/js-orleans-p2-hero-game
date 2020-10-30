@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import './Quizz.css';
-import heroCardMale from './heroCardMale';
-import heroCardFemale from './heroCardFemale';
-import CaptainMarvelCard from 'url:~/src/HeroesCards/CaptainMarvel_Story.png';
-import GamoraCard from 'url:~/src/HeroesCards/Carte_Gamora_Story-min.png';
-import HarleyQuinnCard from 'url:~/src/HeroesCards/Carte_Harleyquinn_Story-min.png';
-import InvisibleWomanCard from 'url:~/src/HeroesCards/Carte_Invisiblewoman_Story-min.png';
-import WonderWomanCard from 'url:~/src/HeroesCards/Carte_Wonderwoman_Story-min.png'
-import FlashCard from 'url:~/src/HeroesCards/Carte_Flash_Story-min.png';
-import IronmanCard from 'url:~/src/HeroesCards/Carte_Ironman_Story-min.png';
-import JokerCard from 'url:~/src/HeroesCards/Carte_Joker_Story-min.png';
-import SpidermanCard from 'url:~/src/HeroesCards/Carte_Spiderman_Story-min.png';
-import SupermanCard from 'url:~/src/HeroesCards/Carte_Superman_Story-min.png';
-import BgImg from 'url:~/src/HeroesCards/Section_QuelHeros.png';
+import heroCardMale from './HeroCardMale';
+import heroCardFemale from './HeroCardFemale';
+import CaptainMarvelCard from '../HeroesCards/CaptainMarvel_Story.png';
+import GamoraCard from '../HeroesCards/Carte_Gamora_Story-min.png';
+import HarleyQuinnCard from '../HeroesCards/Carte_Harleyquinn_Story-min.png';
+import InvisibleWomanCard from '../HeroesCards/Carte_Invisiblewoman_Story-min.png';
+import WonderWomanCard from '../HeroesCards/Carte_Wonderwoman_Story-min.png'
+import FlashCard from '../HeroesCards/Carte_Flash_Story-min.png';
+import IronmanCard from '../HeroesCards/Carte_Ironman_Story-min.png';
+import JokerCard from '../HeroesCards/Carte_Joker_Story-min.png';
+import SpidermanCard from '../HeroesCards/Carte_Spiderman_Story-min.png';
+import SupermanCard from '../HeroesCards/Carte_Superman_Story-min.png';
+import BgImg from '../HeroesCards/Section_QuelHeros.png';
 function Quizz() {
 
     const questions = [

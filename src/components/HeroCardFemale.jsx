@@ -1,9 +1,9 @@
 import React from 'react';
-import CaptainMarvelCard from 'url:~/src/HeroesCards/CaptainMarvel_Story.png';
-import GamoraCard from 'url:~/src/HeroesCards/Carte_Gamora_Story-min.png'
-import HarleyQuinnCard from 'url:~/src/HeroesCards/Carte_Harleyquinn_Story-min.png';
-import InvisibleWomanCard from 'url:~/src/HeroesCards/Carte_Invisiblewoman_Story-min.png';
-import WonderWomanCard from 'url:~/src/HeroesCards/Carte_Wonderwoman_Story-min.png';
+import CaptainMarvelCard from '../HeroesCards/CaptainMarvel_Story.png';
+import GamoraCard from '../HeroesCards/Carte_Gamora_Story-min.png'
+import HarleyQuinnCard from '../HeroesCards/Carte_Harleyquinn_Story-min.png';
+import InvisibleWomanCard from '../HeroesCards/Carte_Invisiblewoman_Story-min.png';
+import WonderWomanCard from '../HeroesCards/Carte_Wonderwoman_Story-min.png';
 
 const heroCardFemale= [
 {
