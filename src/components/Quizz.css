@@ -1,6 +1,3 @@
-*{
-    z-index: 1;
-}
 .quizz{
     background-color: var(--light);
     height: 100vh;
