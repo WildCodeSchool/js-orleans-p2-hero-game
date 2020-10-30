@@ -1,4 +1,6 @@
 import './App.css';
+import './main.css';
+import Footer from './components/footer/Footer';
 
 import './main.css'
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
@@ -18,6 +20,7 @@ function App() {
           <Route exact path="/" component={Accueil} />
           <Route path="/game" component={Jeux} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
