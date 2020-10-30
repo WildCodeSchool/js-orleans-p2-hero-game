@@ -1,20 +1,4 @@
-:root {
-    --main-color: #223645
-;
-    --secondary-color: #9F1524
-;
-    --dark: #1A1D26
-;
-    --light: #FFF5EF
-;
-    --light-medium: #DCDCDC
-;
-    --spacing: 8px;
-    --spacing-medium: calc(var(--spacing) * 2);
-    --spacing-large: calc(var(--spacing) * 4);
-    --main-font: 'Poppins', sans-serif;
-    --title-font: 'Anton', sans-serif;
-  }
+
 .quizz{
     background-color: var(--light);
     height: 100vh;
@@ -90,7 +74,7 @@
 }
 .score-section img:hover {
 
-    transform: scale(1, 1.5);
+    transform: scale(1, 1.2);
    
 }
 
