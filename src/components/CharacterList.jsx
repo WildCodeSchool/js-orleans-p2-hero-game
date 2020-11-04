@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './CharacterList.css';
+
+import Logo from '../assets/Logo_Mini.png'
 
 import ThanosIc from '../assets/Thanos_icone-min.png';
 import FlashIc from '../assets/Flash_icone-min.png';
@@ -52,47 +54,161 @@ const CharacterList = () => {
 
     
 
-        const [change, setChange] = React.useState(false);
+       // const [change, setChange] = React.useState(false);
 
-        const QuickSilver= () => setChange(!change);
-        const SuperMan= () => setChange(!change);
-    
+        //const QuickSilver= () => setChange(!change);
+        //const SuperMan= () => setChange(!change);
+        const [quickSilver, setQuicksilver]= useState(false)
+        const changeQuicksilver=() => setQuicksilver(!quickSilver)
+
+        const [superman, setSuperman]= useState(false)
+        const changeSuperman=() => setSuperman(!superman)
+
+        const [supergirl, setSupergirl]= useState(false)
+        const changeSupergirl=() => setSupergirl(!supergirl)
+
+        const [mera, setMera]= useState(false)
+        const changeMera=() => setMera(!mera)
+
+        const [flash, setFlash]= useState(false)
+        const changeFlash=() => setFlash(!flash)
+
+        const [captainmarvel, setCaptainMarvel]= useState(false)
+        const changeCaptainMarvel=() => setCaptainMarvel(!captainmarvel)
+
+        const [groot, setGroot]= useState(false)
+        const changeGroot=() => setGroot(!groot)
+
+        const [gamora, setGamora]= useState(false)
+        const changeGamora=() => setGamora(!gamora)
+
+        const [ironman, setIronman]= useState(false)
+        const changeIronman=() => setIronman(!ironman)
+
+        const [greenlantern, setGreenLantern]= useState(false)
+        const changeGreenLantern=() => setGreenLantern(!greenlantern)
+
+        const [hulk, setHulk]= useState(false)
+        const changeHulk=() => setHulk(!hulk)
+
+        const [invisiblewoman, setInvisiblewoman]= useState(false)
+        const changeInvisiblewoman=() => setInvisiblewoman(!invisiblewoman)
+
+        const [wonderwoman, setWonderwoman]= useState(false)
+        const changeWonderwoman=() => setWonderwoman(!wonderwoman)
+
+        const [wolwerine, setWolwerine]= useState(false)
+        const changeWolwerine=() => setWolwerine(!wolwerine)
+
+        const [thanos, setThanos]= useState(false)
+        const changeThanos=() => setThanos(!thanos)
+
+        const [joker, setJoker]= useState(false)
+        const changeJoker=() => setJoker(!joker)
+
+        const [harleyquinn, setHarleyquinn]= useState(false)
+        const changeHarleyquinn=() => setHarleyquinn(!harleyquinn)
+
+        const [poisonivy, setPoisonIvy]= useState(false)
+        const changePoisonIvy=() => setPoisonIvy(!poisonivy)
+
+        const [medusa, setMedusa]= useState(false)
+        const changeMedusa=() => setMedusa(!medusa)
+
+        const [spiderman, setSpiderman]= useState(false)
+        const changeSpiderman=() => setSpiderman(!spiderman)
+        
 
 
 
 
     return (
-        <div id="personnage" className="list">
-            
-            <img id="icons" className="one" src={QuickSilverIc} onClick={QuickSilver} />
-                {change && (
+        <div id="character" className="list">
+
+            <img className="card" src="" />
+            <img id="icons" className="one" src={QuickSilverIc} onClick={changeQuicksilver} />
+                {quickSilver && (
                     <img className="card" src={QuickSilverStat} />
                 )}
-            <img id="icons" className="two" src={SuperManIc}  onClick={SuperMan} />
-                {change && (
+            <img id="icons" className="two" src={SuperManIc}  onClick={changeSuperman} />
+                {superman && (
                     <img className="card" src={SuperManStat} />
                 )}
-            <img id="icons" className="five" src={SuperGirlIc}/>
-            <img id="icons" className="six" src={MeraIc}/>
-            <img id="icons" className="seven" src={FlashIc}/>
+            <img id="icons" className="five" src={SuperGirlIc} onClick={changeSupergirl} />
+                {supergirl && (
+                    <img className="card" src={SuperGirlStat} />
+                )}
+            <img id="icons" className="six" src={MeraIc} onClick={changeMera} />
+                {mera && (
+                    <img className="card" src={MeraStat} />
+                )}
+            <img id="icons" className="seven" src={FlashIc} onClick={changeFlash} />
+                {flash && (
+                    <img className="card" src={FlashStat} />
+                )}
 
-            <img id="icons" className="three" src={CaptainMarvelIc}/>
-            <img id="icons" className="four" src={GrootIc}/>
-            <img id="icons" className="eight" src={GamoraIc}/>
-            <img id="icons" className="nine" src={IronManIc}/>
-            <img id="icons" className="ten" src={GreenlanternIc}/>
+            <img id="icons" className="three" src={CaptainMarvelIc} onClick={changeCaptainMarvel} />
+                {captainmarvel && (
+                    <img className="card" src={CaptainMarvelStat} />
+                )}
+            <img id="icons" className="four" src={GrootIc} onClick={changeGroot} />
+                {groot && (
+                    <img className="card" src={GrootStat} />
+                )}
+            <img id="icons" className="eight" src={GamoraIc} onClick={changeGamora} />
+                {gamora && (
+                    <img className="card" src={GamoraStat} />
+                )}
+            <img id="icons" className="nine" src={IronManIc} onClick={changeIronman} />
+                {ironman && (
+                    <img className="card" src={IronManStat} />
+                )}
+            <img id="icons" className="ten" src={GreenlanternIc} onClick={changeGreenLantern} />
+                {greenlantern && (
+                    <img className="card" src={GreenLanternStat} />
+                )}
 
-            <img id="icons" className="eleven" src={HulkIc}/>
-            <img id="icons" className="twelve" src={InvisibleWomanIc}/>
-            <img id="icons" className="thirteen" src={WonderWomanIc}/>
-            <img id="icons" className="seventeen" src={WolwerineIc}/>
-            <img id="icons" className="eighteen" src={ThanosIc}/>
+            <img id="icons" className="eleven" src={HulkIc} onClick={changeHulk} />
+                {hulk && (
+                    <img className="card" src={HulkStat} />
+                )}
+            <img id="icons" className="twelve" src={InvisibleWomanIc} onClick={changeInvisiblewoman} />
+                {invisiblewoman && (
+                    <img className="card" src={InvisibleWomanStat} />
+                )}
+            <img id="icons" className="thirteen" src={WonderWomanIc} onClick={changeWonderwoman} />
+                {wonderwoman && (
+                    <img className="card" src={WonderWomanStat} />
+                )}
+            <img id="icons" className="seventeen" src={WolwerineIc} onClick={changeWolwerine} />
+                {wolwerine && (
+                    <img className="card" src={WolwerineStat} />
+                )}
+            <img id="icons" className="eighteen" src={ThanosIc} onClick={changeThanos} />
+                {thanos && (
+                    <img className="card" src={ThanosStat} />
+                )}
 
-            <img id="icons" className="sixteen" src={JokerIc}/>
-            <img id="icons" className="fifteen" src={HarleyquinnIc}/>
-            <img id="icons" className="fourteen" src={PoisonIvyIc}/>
-            <img id="icons" className="nineteen" src={MedusaIc}/>
-            <img id="icons" className="twenty" src={SpiderManIc}/>
+            <img id="icons" className="sixteen" src={JokerIc} onClick={changeJoker} />
+                {joker && (
+                    <img className="card" src={JokerStat} />
+                )}
+            <img id="icons" className="fifteen" src={HarleyquinnIc} onClick={changeHarleyquinn} />
+                {harleyquinn && (
+                    <img className="card" src={HarleyQuinnStat} />
+                )}
+            <img id="icons" className="fourteen" src={PoisonIvyIc} onClick={changePoisonIvy} />
+                {poisonivy && (
+                    <img className="card" src={PoisonIvyStat} />
+                )}
+            <img id="icons" className="nineteen" src={MedusaIc} onClick={changeMedusa} />
+                {medusa && (
+                    <img className="card" src={MedusaStat} />
+                )}
+            <img id="icons" className="twenty" src={SpiderManIc} onClick={changeSpiderman} />
+                {spiderman && (
+                    <img className="card" src={SpiderManStat} />
+                )}
 
             <img className="strenght" src={StrenghtIc} />
             <img className="speed" src={SpeedIc} />
